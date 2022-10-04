@@ -1,14 +1,6 @@
-/* Déclaration initiale */
-.box {
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
-  /* box-sizing est appliqué seulement à cette classe */
-}
-
 * {
   font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
-  /* box-sizing est appliqué à tous les éléments */
 }
 
 body,
@@ -551,8 +543,6 @@ p {
 
   .bloc-hebergement-2 {
     margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
   }
 
   .details-hebergement {
