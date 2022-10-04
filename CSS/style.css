@@ -398,7 +398,7 @@ p {
 
   /* Logo Booki */
   .logo {
-    background-image: url(../assets/logo/Bookirdim.png);
+    background-image: url(../images/logo/Bookirdim.png);
     margin-left: 0px;
     background-repeat: no-repeat;
     width: 124px;
@@ -420,7 +420,6 @@ p {
   .intitule {
     margin-left: 10px;
     margin-bottom: 10px;
-    font-weight: 800;
   }
 
   .sous-titre-hebergement {
@@ -439,6 +438,8 @@ p {
   .sous-titre-head {
     margin-left: 10px;
     margin-top: 10px;
+    font-weight: 400;
+    font-size: 20px;
   }
 
   .sous-titre-populaire {
@@ -852,7 +853,7 @@ p {
   }
 
   .logo {
-    background-image: url(../assets/logo/Bookirdim.png);
+    background-image: url(../images/logo/Bookirdim.png);
     background-repeat: no-repeat;
     width: 125px;
     height: 60px;
@@ -1313,7 +1314,7 @@ p {
   }
 
   .logo {
-    background-image: url(../assets/logo/Bookirdim.png);
+    background-image: url(../images/logo/Bookirdim.png);
     margin-left: 10px;
     background-repeat: no-repeat;
     width: 124px;
