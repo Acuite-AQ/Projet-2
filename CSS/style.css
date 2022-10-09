@@ -51,6 +51,11 @@ p {
   align-items: center;
 }
 
+.flexStart {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
 .flexLigne {
   display: flex;
   flex-direction: row;
@@ -232,6 +237,7 @@ p {
 
 /* Fond filtre */
 .bouton-rond-famille {
+  font-family: FontAwesome;
   display: flex;
   cursor: pointer;
   border-radius: 34px;
@@ -242,7 +248,6 @@ p {
 
 .bouton-rond-famille:before {
   /*Icone */
-  font-family: FontAwesome;
   content: "\e59d";
   font-size: 20px;
   color: #0065FC;
@@ -260,6 +265,7 @@ p {
 
 /* Fond filtre */
 .bouton-rond-romantique {
+  font-family: FontAwesome;
   display: flex;
   cursor: pointer;
   border-radius: 34px;
@@ -270,7 +276,6 @@ p {
 
 .bouton-rond-romantique:before {
   /* Icone */
-  font-family: FontAwesome;
   content: "\f004";
   font-size: 20px;
   color: #0065FC;
@@ -288,6 +293,7 @@ p {
 
 /* Fond filtre */
 .bouton-rond-animaux {
+  font-family: FontAwesome;
   display: flex;
   cursor: pointer;
   border-radius: 34px;
@@ -297,7 +303,6 @@ p {
 
 .bouton-rond-animaux:before {
   /* Icone */
-  font-family: FontAwesome;
   content: "\f6d3";
   font-size: 20px;
   color: #0065FC;
@@ -357,7 +362,7 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-right: -52px;
   }
 
@@ -370,7 +375,7 @@ p {
   }
 
   .break {
-    width: 50%;
+    width: 70%;
   }
 
   a {
@@ -387,16 +392,17 @@ p {
   }
 
   .sous-titre-hebergement {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
     padding-top: 20px;
     margin-left: 20px;
+    margin-bottom: 20px;
   }
 
   .sous-titre-plus {
+    margin-top: 30px;
+    margin-left: 20px;
     margin-bottom: 30px;
-    margin-top: -45px;
-    margin-left: 30px;
   }
 
   .sous-titre-head {
@@ -407,7 +413,9 @@ p {
   }
 
   .sous-titre-populaire {
-    padding-top: 30px;
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-bottom: 0px;
   }
 
   /* Section hébergement */
@@ -424,7 +432,8 @@ p {
 
   .hebergement:visited {
     text-decoration: none;
-    color: #0065FC;
+    color: black;
+    text-decoration: none;
   }
 
   .hebergement:hover {
@@ -434,18 +443,19 @@ p {
 
   .navigation {
     text-decoration: none;
-    color: #0065FC;
+    color: black;
     font-weight: 500;
   }
 
   .navigation:visited {
     text-decoration: none;
-    color: #0065FC;
+    color: black;
   }
 
-  .hebergement:visited {
+  .navigation:hover {
     text-decoration: none;
     color: #0065FC;
+    font-weight: 500;
   }
 
   /* Section activités */
@@ -457,12 +467,12 @@ p {
     padding-left: 10px;
     padding-right: 10px;
     text-decoration: none;
-    color: #0065FC;
+    color: black;
   }
 
   .activites:visited {
     text-decoration: none;
-    color: #0065FC;
+    color: black;
   }
 
   .activites:hover {
@@ -495,7 +505,6 @@ p {
 
   .taille-hebergement {
     flex: 2;
-    height: 750px;
     margin-right: 20px;
     border-radius: 20px;
   }
@@ -506,11 +515,11 @@ p {
   }
 
   .bloc-hebergement-1 {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   .bloc-hebergement-2 {
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
   .details-hebergement {
@@ -566,13 +575,13 @@ p {
     display: flex;
     flex-direction: column;
     flex: 1;
-    height: 750px;
+    height: auto;
     border-radius: 20px;
   }
 
   .img-populaire {
     width: 35%;
-    height: 130px;
+    height: 145px;
     object-fit: cover;
     border-radius: 15px 0 0 15px;
     padding-top: 5px;
@@ -593,6 +602,7 @@ p {
     margin-right: 1px;
     color: #0065FC;
     font-size: 14px;
+    margin-top: 25px;
   }
 
   .note-vide-populaire {
@@ -604,11 +614,12 @@ p {
 
   .icone-etoile {
     align-items: baseline;
-    font-size: 24px
+    font-size: 24px;
+    margin-right: 20px;
   }
 
   .bloc-populaire-cartes {
-    height: 700px;
+    height: auto;
     align-items: stretch;
   }
 
@@ -618,19 +629,19 @@ p {
   }
 
   .bloc-populaire-1 {
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
     box-shadow: 5px 5px 5px 1px #f2f2f2;
   }
 
   .bloc-populaire-2 {
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     box-shadow: 5px 5px 5px 1px #f2f2f2;
   }
 
   .bloc-populaire-3 {
-    margin-top: 30px;
+    margin-top: 20px;
     box-shadow: 5px 5px 5px 1px #f2f2f2;
   }
 
@@ -640,11 +651,13 @@ p {
   }
 
   .fond-blanc-populaire {
-    height: 135px;
+    height: 150px;
     background-color: white;
     padding: 0%;
     border-radius: 20px;
     box-shadow: 5px 5px 5px 1px #f2f2f2;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 
   .fond-blanc-populaire:hover {
@@ -653,23 +666,17 @@ p {
   }
 
   .quatre-etoiles {
-    font-family: FontAwesome;
     content: "\f005";
-    font-size: 16px;
     text-align: center;
   }
 
   .cinq-etoiles {
-    font-family: FontAwesome;
     content: "\f005";
-    font-size: 16px;
     text-align: center;
   }
 
   .trois-etoiles {
-    font-family: FontAwesome;
     content: "\f005";
-    font-size: 16px;
     text-align: center;
   }
 
@@ -681,7 +688,6 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    height: 600px;
     margin-bottom: 30px;
   }
 
@@ -798,6 +804,7 @@ p {
   .header {
     display: flex;
     flex-wrap: wrap;
+    margin:0;
   }
 
   .break {
@@ -831,7 +838,9 @@ p {
   .sous-titre-head {
     margin-left: 10px;
     margin-top: 10px;
+    margin-bottom: 30px;
     font-weight: 400;
+    font-size: 14px;
   }
 
   .sous-titre-hebergement {
@@ -1032,7 +1041,7 @@ p {
 
   .taille-populaire {
     background-color: #F2F2F2;
-    height: 560px;
+    height: 580px;
     width: auto;
     margin-left: -25px;
     margin-right: -25px;
@@ -1044,8 +1053,8 @@ p {
   }
 
   .img-populaire {
-    width: 35%;
-    height: 120px;
+    width: 40%;
+    height: 140px;
     object-fit: cover;
     border-radius: 15px 0 0 15px;
   }
@@ -1067,6 +1076,7 @@ p {
 
   .note-pleine-populaire {
     float: left;
+    margin-top: 10px;
     margin-right: 1px;
     color: #0065FC;
     font-size: 14px;
@@ -1097,22 +1107,15 @@ p {
   }
 
   .bloc-populaire-1 {
-    margin-bottom: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0px 10px 5px 10px;
   }
 
   .bloc-populaire-2 {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 5px 10px 5px 10px;
   }
 
   .bloc-populaire-3 {
-    margin-top: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 5px 10px 0px 10px;
   }
 
   .details-populaire {
@@ -1130,23 +1133,17 @@ p {
   }
 
   .quatre-etoiles {
-    font-family: FontAwesome;
     content: "\f005";
-    font-size: 16px;
     text-align: center;
   }
 
   .cinq-etoiles {
-    font-family: FontAwesome;
     content: "\f005";
-    font-size: 16px;
     text-align: center;
   }
 
   .trois-etoiles {
-    font-family: FontAwesome;
     content: "\f005";
-    font-size: 16px;
     text-align: center;
   }
 
@@ -1256,6 +1253,7 @@ p {
     row-gap: 200px;
     justify-content: space-evenly;
     margin-right: 20px;
+    margin-left: 0;
   }
 
   .logo {
@@ -1535,21 +1533,18 @@ p {
   }
 
   .quatre-etoiles {
-    font-family: FontAwesome;
     content: "\f005";
     font-size: 16px;
     text-align: center;
   }
 
   .cinq-etoiles {
-    font-family: FontAwesome;
     content: "\f005";
     font-size: 16px;
     text-align: center;
   }
 
   .trois-etoiles {
-    font-family: FontAwesome;
     content: "\f005";
     font-size: 16px;
     text-align: center;
@@ -1569,21 +1564,21 @@ p {
 
   .img-activites-duo-1 {
     width: 100%;
-    height: 210px;
+    height: 170px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
   }
 
   .img-activites-duo-2 {
     width: 100%;
-    height: 135px;
+    height: 130px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
   }
 
   .img-activites-duo-3 {
     width: 100%;
-    height: 172px;
+    height: 135px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
   }
@@ -1602,7 +1597,6 @@ p {
     border-radius: 15px 15px 15px 15px;
     border: 1px solid #F2F2F2;
     box-shadow: 2px 2px #F2F2F2;
-    margin-bottom: 15px;
   }
 
   .details-activites-duo-1 {
@@ -1610,18 +1604,29 @@ p {
     border-radius: 15px 15px 15px 15px;
     border: 1px solid #F2F2F2;
     box-shadow: 2px 2px #F2F2F2;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    height:230px;
   }
 
   .details-activites-duo-2 {
     border-radius: 15px 15px 15px 15px;
     border: 1px solid #F2F2F2;
     box-shadow: 2px 2px #F2F2F2;
+    margin-top: 25px;
+    height: 195px;
   }
 
   .fond-blanc-activites {
     width: auto;
-    height: 530px;
+    height: 500px;
+    background-color: white;
+    padding: 1%;
+    border-radius: 20px;
+  }
+
+  .fond-blanc-activites-duo {
+    width: auto;
+    height: 500px;
     background-color: white;
     padding: 1%;
     border-radius: 20px;
@@ -1645,12 +1650,12 @@ p {
   .footer-titre {
     width: 34%;
     padding-left: 10px;
-    margin-left: 10px;
+    margin-left: 25px;
   }
 
   footer {
-    margin-left: -8px;
-    margin-right: -8px;
+    margin-left: -25px;
+    margin-right: -25px;
     background-color: #F2F2F2;
     display: flex;
     flex-direction: row;
