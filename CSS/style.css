@@ -56,6 +56,7 @@ p {
   justify-content: flex-start;
   flex-direction: column;
 }
+
 .flexLigne {
   display: flex;
   flex-direction: row;
@@ -416,6 +417,7 @@ p {
     margin-top: 20px;
     padding-top: 20px;
     margin-bottom: 0px;
+    margin-left: 20px;
   }
 
   /* Section hébergement */
@@ -804,7 +806,7 @@ p {
   .header {
     display: flex;
     flex-wrap: wrap;
-    margin:0;
+    margin: 0;
   }
 
   .break {
@@ -905,7 +907,7 @@ p {
   .navigation {
     border: none;
     font-weight: 500;
-    color: #0065FC;
+    color: black;
   }
 
   .navigation:hover {
@@ -1274,7 +1276,7 @@ p {
 
   .navigation {
     text-decoration: none;
-    color: #0065FC;
+    color: black;
     font-weight: bolder;
   }
 
@@ -1338,7 +1340,6 @@ p {
     padding-bottom: 0px;
     margin-top: -7px;
     text-decoration: none;
-    color: #0065FC;
   }
 
   .activites:visited {
@@ -1605,7 +1606,7 @@ p {
     border: 1px solid #F2F2F2;
     box-shadow: 2px 2px #F2F2F2;
     margin-bottom: 10px;
-    height:230px;
+    height: 230px;
   }
 
   .details-activites-duo-2 {
